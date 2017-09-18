@@ -30,3 +30,4 @@ C:\Users\TJRob\Documents\Nightmares\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\TJRob\Documents\Nightmares\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\TJRob\Documents\Nightmares\obj\Debug\Assembly-CSharp.dll
 C:\Users\TJRob\Documents\Nightmares\obj\Debug\Assembly-CSharp.pdb
+C:\Users\TJRob\Documents\Nightmares\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

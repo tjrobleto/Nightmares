@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 82898145799080622}
   - component: {fileID: 108077013061044066}
   - component: {fileID: 120732719039702204}
-  - component: {fileID: 114611780321147956}
+  - component: {fileID: 114816849253464252}
   m_Layer: 0
   m_Name: GunBarrelEnd
   m_TagString: Untagged
@@ -45,7 +45,10 @@ GameObject:
   - component: {fileID: 82842432788609738}
   - component: {fileID: 136072577772726418}
   - component: {fileID: 114888217932118196}
-  - component: {fileID: 114055780100382700}
+  - component: {fileID: 114674492542498662}
+  - component: {fileID: 114328684789109390}
+  - component: {fileID: 114552512502591278}
+  - component: {fileID: 114447641935084546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -364,25 +367,11 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114055780100382700
+--- !u!114 &114328684789109390
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -390,17 +379,90 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673013303122610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 0}
-  damageImage: {fileID: 0}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
---- !u!114 &114611780321147956
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 1
+  m_InterpolateRotation: 15
+  m_InterpolateMovement: 1
+--- !u!114 &114447641935084546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673013303122610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 4662012885085622}
+  m_ChildIndex: 0
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
+--- !u!114 &114552512502591278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673013303122610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95860265510246540}
+  m_ParameterSendBits: 3
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &114674492542498662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673013303122610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 11
+    i1: 79
+    i2: 165
+    i3: 185
+    i4: 73
+    i5: 6
+    i6: 115
+    i7: 116
+    i8: 232
+    i9: 209
+    i10: 113
+    i11: 16
+    i12: 224
+    i13: 82
+    i14: 172
+    i15: 197
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &114816849253464252
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -414,6 +476,7 @@ MonoBehaviour:
   damagePerShot: 20
   timeBetweenBullets: 0.15
   range: 100
+  parent: {fileID: 0}
 --- !u!114 &114888217932118196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,13 +489,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 114442619966475280, guid: 9cebb397c4baa384abd6190bb5482622,
+    type: 2}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  timeBetweenBullets: 0.15
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
+  hud: {fileID: 1095338142288444, guid: 9cebb397c4baa384abd6190bb5482622, type: 2}
 --- !u!120 &120732719039702204
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470258799082434}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 0
